@@ -4,7 +4,7 @@ import './assets/style.css'
 import TodoList from '../TodoList'
 import TodoInput from '../TodoInput'
 import FilterTodo from '../FilterTodo'
-import SearchTodo from '../SearchTodo/component'
+import SearchTodo from '../SearchTodo'
 
 const App = () => (
   <div className="App">

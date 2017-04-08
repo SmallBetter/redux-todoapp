@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 import './assets/style.css'
 
 const TodoItem = ({ id, text, finish, toggleTodo, removeTodo }) => {
@@ -12,5 +12,12 @@ const TodoItem = ({ id, text, finish, toggleTodo, removeTodo }) => {
   )
 }
 
+TodoItem.propTypes = {
+  id: PropTypes.number.isRequired,
+  text: PropTypes.string.isRequired,
+  finish: PropTypes.bool.isRequired,
+  removeTodo: PropTypes.func.isRequired,
+  toggleTodo: PropTypes.func.isRequired
+}
 
 export default TodoItem

@@ -1,6 +1,6 @@
 import TYPE from './types'
 
-export const searchTodo = search => ({
+export const mySearchTodo = search => ({
   type: TYPE.SEARCH.TODO,
   payload: { search }
 })

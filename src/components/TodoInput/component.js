@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 
 class TodoInput extends Component {
 
@@ -27,5 +27,10 @@ class TodoInput extends Component {
     )
   }
 }
+
+TodoInput.propTypes = {
+  addTodo: PropTypes.func.isRequired
+}
+
 
 export default TodoInput

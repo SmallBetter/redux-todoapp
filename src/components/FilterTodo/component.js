@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 
-const TodoItem = ({ filterTodo }) => (
+const FilterTodo = ({ filterTodo }) => (
   <div>
     <button onClick={() => filterTodo(true, true)}>All</button>
     <button onClick={() => filterTodo(true, false)}>Finish</button>
@@ -8,5 +8,8 @@ const TodoItem = ({ filterTodo }) => (
   </div>
   )
 
+FilterTodo.propTypes = {
+  filterTodo: PropTypes.func.isRequired
+}
 
-export default TodoItem
+export default FilterTodo

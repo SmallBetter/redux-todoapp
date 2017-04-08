@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux'
 import todos from './reducers/todos'
 import filter from './reducers/filter'
-import search from './reducers/search'
+import mysearch from './reducers/mysearch'
 
 export const initialStore = {
-  search: {},
+  mysearch: {
+    search: ''
+  },
   filter: {
     finish: true,
     unfinish: true
@@ -26,7 +28,7 @@ export const initialStore = {
 const rootReducer = combineReducers({
   todos,
   filter,
-  search
+  mysearch
 })
 
 export default rootReducer

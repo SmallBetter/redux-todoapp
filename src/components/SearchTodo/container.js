@@ -1,7 +1,8 @@
 import { connect } from 'react-redux'
-import { searchTodo } from '../../actions/search'
 import SearchTodo from './component'
+import { mySearchTodo } from '../../actions/mysearch'
 
-const mapDispatchToProps = { searchTodo }
+const mapDispatchToProps = { mySearchTodo }
+
 
 export default connect(null, mapDispatchToProps)(SearchTodo)
