@@ -1,8 +1,7 @@
 import React, { PropTypes } from 'react'
-import './assets/style.css'
 
 const SearchTodo = ({ mySearchTodo }) => (
-  <input className="Search" type="text" placeholder="Search" onChange={event => mySearchTodo(event.target.value)} />
+  <input type="text" placeholder="Search" onChange={event => mySearchTodo(event.target.value)} />
   )
 
 SearchTodo.propTypes = {
